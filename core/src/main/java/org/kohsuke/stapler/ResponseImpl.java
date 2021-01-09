@@ -45,7 +45,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpServletResponseWrapper;
 
-import com.jcraft.jzlib.GZIPOutputStream;
+import java.util.zip.GZIPOutputStream;
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import net.sf.json.JsonConfig;
 import org.apache.commons.io.IOUtils;

@@ -862,7 +862,7 @@ public class Stapler extends HttpServlet {
         if (x instanceof IOException && "Closed".equals(x.getMessage())) { // org.eclipse.jetty.server.HttpOutput.print
             return true;
         }
-        if (x instanceof IOException && "finished".equals(x.getMessage())) { //com.jcraft.jzlib.DeflaterOutputStream.write
+        if (x instanceof IOException && "write beyond end of stream".equals(x.getMessage())) { //java.util.zip.DeflaterOutputStream.write
             return true;
         }
         return isSocketException(x.getCause());

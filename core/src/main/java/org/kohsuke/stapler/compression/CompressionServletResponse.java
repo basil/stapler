@@ -1,6 +1,6 @@
 package org.kohsuke.stapler.compression;
 
-import com.jcraft.jzlib.GZIPOutputStream;
+import java.util.zip.GZIPOutputStream;
 
 import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletResponse;
